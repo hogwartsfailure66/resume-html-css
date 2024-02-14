@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xintong Wu - Wordle</title>
+    <title>Xintong Wu - Tic Tac Toe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,52 +78,24 @@
     <div class="gradient"></div>
 
     <main>
-      <section class="container-dkblue">
-        <div class="wordle">
-          <h2 class="brand-wordle">WORDLE</h2>
-          <div class="info-bar hidden">
-            <div class="spiral">🌀</div>
-          </div>
-          <div class="playboard">
-            <div class="letter" id="letter-0"></div>
-            <div class="letter" id="letter-1"></div>
-            <div class="letter" id="letter-2"></div>
-            <div class="letter" id="letter-3"></div>
-            <div class="letter" id="letter-4"></div>
-
-            <div class="letter" id="letter-5"></div>
-            <div class="letter" id="letter-6"></div>
-            <div class="letter" id="letter-7"></div>
-            <div class="letter" id="letter-8"></div>
-            <div class="letter" id="letter-9"></div>
-
-            <div class="letter" id="letter-10"></div>
-            <div class="letter" id="letter-11"></div>
-            <div class="letter" id="letter-12"></div>
-            <div class="letter" id="letter-13"></div>
-            <div class="letter" id="letter-14"></div>
-
-            <div class="letter" id="letter-15"></div>
-            <div class="letter" id="letter-16"></div>
-            <div class="letter" id="letter-17"></div>
-            <div class="letter" id="letter-18"></div>
-            <div class="letter" id="letter-19"></div>
-
-            <div class="letter" id="letter-20"></div>
-            <div class="letter" id="letter-21"></div>
-            <div class="letter" id="letter-22"></div>
-            <div class="letter" id="letter-23"></div>
-            <div class="letter" id="letter-24"></div>
-
-            <div class="letter" id="letter-25"></div>
-            <div class="letter" id="letter-26"></div>
-            <div class="letter" id="letter-27"></div>
-            <div class="letter" id="letter-28"></div>
-            <div class="letter" id="letter-29"></div>
-          </div>
+      <section id="tic-tac-toe" class="container-dkblue">
+        <div class="board">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
         </div>
       </section>
     </main>
+    <div class="winning-message">
+      <div class="message"></div>
+      <button id="restart">Restart</button>
+    </div>
 
     <div class="gradient"></div>
 
@@ -175,6 +147,7 @@
       </ul>
       <p><small>&copy; 2024 Xintong Wu. All rights reserved.</small></p>
     </footer>
-    <script src="wordle.js"></script>
+
+    <script src="tic-tac-toe.js"></script>
   </body>
 </html>
