@@ -9,6 +9,7 @@
   --mint: #45c4b0;
   --aqua: #86fbfb;
   --white: #f7f8fa;
+  --ltblue: #d8ebf2;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
@@ -100,6 +101,10 @@ svg:hover {
 
 .container-black {
   background-color: var(--black);
+}
+
+.container-ltblue {
+  background-color: var(--ltblue);
 }
 
 .gradient {
@@ -418,4 +423,42 @@ footer ul {
   border-radius: 10px;
   max-height: 400px;
   max-width: 400px;
+}
+
+/* fun stuff */
+#some-fun-stuff {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.fun-stuff {
+  margin: 3rem 0rem;
+}
+
+.fun-stuff ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fun-stuff img {
+  max-width: 300px;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+}
+
+.fun-stuff img:hover {
+  transform: scale(1.05);
+}
+
+/* wordle */
+.wordle {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: var(--white);
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xintong Wu</title>
+    <title>Wordle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,15 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <nav class="navbar">
       <ul>
         <li>
           <h1>
-            <a href="index.html">
+            <a href="../../index.html">
               <div class="brand">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +38,9 @@
             </a>
           </h1>
         </li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><a href="../../about.html">About</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
         <li>
           <a href="https://www.linkedin.com/in/wuxt/" target="_blank">
             <svg
@@ -69,194 +69,63 @@
             <span class="sr-only">Github</span>
           </a>
         </li>
-        <li><a class="button" href="#some-fun-stuff">Fun Stuff</a></li>
+        <li>
+          <a class="button" href="../../index.html#some-fun-stuff">Fun Stuff</a>
+        </li>
       </ul>
     </nav>
 
+    <div class="gradient"></div>
+
     <main>
-      <section id="intro">
-        <div>
-          <p class="name">
-            Howdy, my name is
-            <span class="highlight-name rainbow">Xintong Wu.</span>
-          </p>
-          <h2>A software developer.</h2>
-          <p class="sub-intro">
-            Currently, I'm a master's student of Computer Science at Texas A&M
-            University. I love to work on web applications using technologies
-            like React, Tailwind, SpringBoot, etc.
-          </p>
-        </div>
-        <div id="my-img" class="rounded">
-          <img id="me" src="./img//me.PNG" />
+      <section class="container-dkblue">
+        <div class="wordle">
+          <h2 class="brand-wordle">WORDLE</h2>
+          <div class="info-bar hidden">
+            <div class="spiral">🌀</div>
+          </div>
+          <div class="playboard">
+            <div class="letter" id="letter-0"></div>
+            <div class="letter" id="letter-1"></div>
+            <div class="letter" id="letter-2"></div>
+            <div class="letter" id="letter-3"></div>
+            <div class="letter" id="letter-4"></div>
+
+            <div class="letter" id="letter-5"></div>
+            <div class="letter" id="letter-6"></div>
+            <div class="letter" id="letter-7"></div>
+            <div class="letter" id="letter-8"></div>
+            <div class="letter" id="letter-9"></div>
+
+            <div class="letter" id="letter-10"></div>
+            <div class="letter" id="letter-11"></div>
+            <div class="letter" id="letter-12"></div>
+            <div class="letter" id="letter-13"></div>
+            <div class="letter" id="letter-14"></div>
+
+            <div class="letter" id="letter-15"></div>
+            <div class="letter" id="letter-16"></div>
+            <div class="letter" id="letter-17"></div>
+            <div class="letter" id="letter-18"></div>
+            <div class="letter" id="letter-19"></div>
+
+            <div class="letter" id="letter-20"></div>
+            <div class="letter" id="letter-21"></div>
+            <div class="letter" id="letter-22"></div>
+            <div class="letter" id="letter-23"></div>
+            <div class="letter" id="letter-24"></div>
+
+            <div class="letter" id="letter-25"></div>
+            <div class="letter" id="letter-26"></div>
+            <div class="letter" id="letter-27"></div>
+            <div class="letter" id="letter-28"></div>
+            <div class="letter" id="letter-29"></div>
+          </div>
         </div>
       </section>
-
-      <div class="gradient"></div>
-
-      <div class="container-dkblue">
-        <section id="projects">
-          <h2>
-            Projects
-            <span class="sub-description"> that I'm not too ashamed of</span>
-          </h2>
-
-          <article>
-            <div class="text">
-              <h4>Latest Project</h4>
-              <h3>Fightin' Aggies Platform</h3>
-              <p class="container-black card project-description">
-                The Fightin' Aggies platform focuses on using a computer vision
-                model to analyze game plays to identify players who tend to make
-                mistakes while running their routes in a given play. The Vision
-                model then sends the raw data to be analyzed by the backend and
-                generates insights that can be further used by the coaches. The
-                system also generate statistical graphs based on the data.
-              </p>
-              <h4>Technologies used include:</h4>
-              <ul>
-                <li>React</li>
-                <li>Ruby on Rails</li>
-                <li>PostgreSQL</li>
-                <li>Firebase</li>
-              </ul>
-              <ul class="mt-1 links">
-                <li>
-                  <a
-                    href="https://github.com/jessefphipps/fighting-aggies-platform"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a href="https://youtu.be/Z7m5cVmvchs" target="_blank">
-                    Demo
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <span class="card img-box">
-              <img
-                src="./img/projects/fightin-aggies.PNG"
-                alt="Screenshot of fightin' aggies platform."
-              />
-            </span>
-          </article>
-
-          <article class="reverse-article">
-            <div class="text">
-              <h3>SQL Lineage</h3>
-              <p class="container-black card project-description">
-                A SQL lineage analysis tool in Java. This tool takes one or more
-                sql statements, parses the statements, then analyzes lineage and
-                data flow of the statements. Then, it provides a visual
-                representation of the relationships and dependencies between
-                data and tables to help users to better understand data flows.
-              </p>
-              <h4>Technologies used include:</h4>
-              <ul>
-                <li>Vue</li>
-                <li>D3.js</li>
-                <li>SpringBoot</li>
-                <li>Neo4j</li>
-              </ul>
-              <ul class="mt-1 links">
-                <li>
-                  <a
-                    href="https://github.com/hogwartsfailure66/sql"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <span class="card img-box">
-              <img
-                src="./img/projects/sql-lineage.png"
-                alt="Screenshot of sql lineage."
-              />
-            </span>
-          </article>
-
-          <article>
-            <div class="text">
-              <h3>YAIPT -- Yet Another Image Processing Tool</h3>
-              <p class="container-black card project-description">
-                A good ol' image processing tool developed in Python that
-                includes functions such as image denoising, Fourier transform,
-                Butterworth filter, Canny edge detector, etc.
-              </p>
-              <ul class="mt-1 links">
-                <li>
-                  <a
-                    href="https://github.com/hogwartsfailure66/YAIPT"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <span class="card img-box">
-              <img src="./img/projects/yaipt.png" alt="Screenshot of yaipt." />
-            </span>
-          </article>
-
-          <article class="reverse-article">
-            <div class="text">
-              <h3>MyPaint</h3>
-              <p class="container-black card project-description">
-                MyPaint is a graphic editor built in Python and is similar to
-                Windows Paint. It is a powerful but intuitive image editing app.
-                Quickly create and edit your masterpieces with the built-in
-                tools, and when you’re ready, save your files in bmp format and
-                share them anywhere.
-              </p>
-            </div>
-            <span class="card img-box">
-              <img src="./img/projects/cg.png" alt="Screenshot of MyPaint." />
-            </span>
-          </article>
-        </section>
-      </div>
-
-      <div class="gradient"></div>
-
-      <div class="container-black">
-        <section id="some-fun-stuff">
-          <h2>Some Fun Stuff</h2>
-          <div class="fun-stuff">
-            <ul>
-              <li>
-                <a href="./fun-stuff/wordle/wordle.html">
-                  <img src="./img/fun/wordle.jpg" alt="wordle" />
-                </a>
-              </li>
-              <li>
-                <img src="./img/fun/tic-tac-toe.png" alt="tic tac toe" />
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
-      <div class="gradient"></div>
-
-      <div class="container-plum">
-        <section id="contact">
-          <h2>Contact me</h2>
-          <p>
-            I'm always interested in hearing about full stack development,
-            software engineering and database systems.
-          </p>
-          <p><a href="mailto:wuxt@tamu.edu" class="button">Email me</a></p>
-        </section>
-      </div>
-
-      <div class="gradient"></div>
     </main>
+
+    <div class="gradient"></div>
 
     <footer>
       <h2>Xintong Wu</h2>
@@ -306,5 +175,6 @@
       </ul>
       <p><small>&copy; 2024 Xintong Wu. All rights reserved.</small></p>
     </footer>
+    <script src="wordle.js"></script>
   </body>
 </html>
