@@ -455,6 +455,19 @@ footer ul {
   transform: scale(1.05);
 }
 
+/* resume */
+#resume {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: block;
+  height: 1000px;
+}
+
+#resume h2 {
+  margin-bottom: 2rem;
+}
+
 /* wordle */
 .wordle {
   max-width: var(--xl);
