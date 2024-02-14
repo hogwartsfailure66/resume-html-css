@@ -412,3 +412,10 @@ footer ul {
 #contact p:last-child {
   margin-top: 3rem;
 }
+
+/* about page */
+#about img {
+  border-radius: 10px;
+  max-height: 400px;
+  max-width: 400px;
+}
