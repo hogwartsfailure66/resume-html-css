@@ -439,7 +439,17 @@ footer ul {
 .fun-stuff ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .fun-stuff ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .fun-stuff img {
